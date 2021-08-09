@@ -9,8 +9,23 @@ nav span {
   font-family: 'Bungee', cursive;
 }
 
-.newTweet {
+.rowNav {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.columnNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  align-self: center;
+}
+
+.icon:hover {
+  align-self: center;
+  color: red;
 }
