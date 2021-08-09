@@ -9,10 +9,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em 0em 0em 0em;
+  padding: 1em;
 }
 
 .name {
   font-size: 35px;
   color: #FFFFFF;
+  padding: 0.5em;
 }
