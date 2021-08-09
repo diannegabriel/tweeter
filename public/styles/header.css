@@ -9,8 +9,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1em 0em 0em 0em;
 }
 
-h2.name {
-  font-weight: bold;
+.name {
+  font-size: 35px;
+  color: #FFFFFF;
 }
