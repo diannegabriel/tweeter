@@ -2,5 +2,11 @@ header {
   height: 400px;
   width: 100%;
   background-color: #f08400;
-background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.columnHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
