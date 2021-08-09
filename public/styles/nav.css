@@ -8,3 +8,9 @@ nav {
 nav span {
   font-family: 'Bungee', cursive;
 }
+
+.newTweet {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
