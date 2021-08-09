@@ -1,13 +1,25 @@
 .new-tweet {
   background-color: #f4f1ec;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 #tweet-text {
   background-color: #f4f1ec;
+  width: 75%;
+  border: 0px;
+  border-bottom: 5px solid #545149;
 }
 
 .button {
   color: #FFF;
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
+  font-size: 18px;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+  font-size: 18px;
 }
