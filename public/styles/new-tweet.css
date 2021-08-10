@@ -49,3 +49,8 @@ label {
 input:focus, textarea:focus, select:focus {
   outline: none;
 }
+
+.error {
+  font-size: small;
+  color: red;
+}
