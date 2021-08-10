@@ -45,3 +45,7 @@
 label {
   font-size: 22px;
 }
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
