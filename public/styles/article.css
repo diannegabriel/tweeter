@@ -27,7 +27,6 @@ article {
   font-weight: bold;
   display: flex;
   flex-basis: 65%;
-  /* flex-grow: 1; */
   border: 0px;
   border-bottom: 4px solid #545149;
   align-items: center;
@@ -39,5 +38,4 @@ footer {
   margin-top: 10px;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
