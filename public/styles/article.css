@@ -26,7 +26,8 @@ article {
   font-size: 18px;
   font-weight: bold;
   display: flex;
-  flex-grow: 1;
+  /* flex-basis: 60%; */
+  flex-grow: 2;
   border: 0px;
   border-bottom: 4px solid #545149;
   align-items: center;
