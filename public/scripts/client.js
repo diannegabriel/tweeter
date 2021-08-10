@@ -53,7 +53,7 @@ $(document).ready(function() {
 });
 
 const loadTweets = () => {
-    $.ajax('/tweet', { 
+    $.ajax('/tweets', { 
       method: 'GET',
       dataType: 'JSON'
     })
