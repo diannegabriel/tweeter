@@ -34,35 +34,17 @@ const data =
 // console.log(timeago.format(tweetData.created_at));
 
 $(document).ready(function() {
-// const $tweeting = createTweetElement(tweetData);
-// console.log($tweeting);
-
   renderTweets(data);
-
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
-    console.log($(this).serialize());
-
     $.ajax('/tweets', {
       type: 'POST',
-      // url: '/tweets/',
       data: $(this).serialize()
     });
-    console.log($.ajax)
   });
 });
 
-const loadTweets = () => {
-    $.ajax('/tweets', { 
-      method: 'GET',
-      dataType: 'JSON'
-    })
-    .then(function (tweets) {
-      renderTweets(tweets)
-  });
-}
 
-loadTweets();
 
 // This function can be responsible for taking in an array of tweet objects
 // and then appending each one to the #tweets-container
@@ -114,3 +96,15 @@ const createTweetElement = (tweet) => {
   // console.log(timeago.format(tweet.created_at))
   return $tweet.html(html);
 }
+
+const loadTweets = () => {
+  $.ajax('/tweets', { 
+    method: 'GET',
+    dataType: 'JSON'
+  })
+  .then(function (tweets) {
+    renderTweets(tweets)
+});
+}
+
+loadTweets();
