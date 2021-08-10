@@ -2,7 +2,7 @@ header {
   height: 400px;
   width: 100%;
   background-color: #57008a;
-background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
 }
 
 .columnHeader {
