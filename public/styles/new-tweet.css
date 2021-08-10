@@ -9,15 +9,15 @@
 
 #tweet-text {
   background-color: #f4f1ec;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
   color: #545149;
   width: 100%;
   border: 0px;
   border-bottom: 4px solid #545149;
   flex-basis: 50%;
   align-self: center;
-  /* display: flex;
-  align-items: center; */
+  margin-top: 5px;
 }
 
 .submitArea {
@@ -39,4 +39,8 @@
 .counter {
   font-family: 'Bungee', cursive;
   font-size: 18px;
+}
+
+label {
+  font-size: 22px;
 }
