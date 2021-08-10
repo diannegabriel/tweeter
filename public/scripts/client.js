@@ -44,7 +44,7 @@ $(document).ready(function() {
     console.log($(this).serialize());
 
     $.ajax({
-      type: 'POST';
+      type: 'POST',
       data: $(this).serialize()
     });
   });
