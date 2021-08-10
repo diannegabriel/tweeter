@@ -48,6 +48,7 @@ $(document).ready(function() {
       url: '/tweets/',
       data: $(this).serialize()
     });
+    console.log($.ajax)
   });
 });
 
