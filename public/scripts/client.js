@@ -46,14 +46,12 @@ $(document).ready(function() {
     const $error = "";
     if ($('textarea').val() === '') {
       $error = $('.error').text(`There's nothing here! Try again?`);
-      $('.error').slideDown("slow");
+      // $('.error').slideDown("slow");
     }
     if ($('textarea').val().length > 140) {
       $error = $('.error').text(`It's limited to 140 characters, mate! Try again?`);
-      $error.slideUp("slow");
-      // return $('.error').text(`It's limited to 140 characters, mate! Try again?`);
+      // $error.slideUp("slow");
     }
-    
     // Refreshes the app when tweet is submitted
     submitTweets($(this).serialize());
   });
