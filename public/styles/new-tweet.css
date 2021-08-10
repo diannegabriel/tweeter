@@ -12,11 +12,11 @@
   background-color: #f4f1ec;
   font-size: 18px;
   font-weight: 600;
+  resize: none;
   color: #545149;
   width: 100%;
   border: 0px;
   border-bottom: 4px solid #545149;
-  flex-basis: 50%;
   align-self: center;
   margin-top: 5px;
 }
