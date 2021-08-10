@@ -46,14 +46,7 @@ $(document).ready(function() {
     
     // User compose tweets
     submitTweets($(this).serialize());
-
-
-    // $.ajax('/tweets', {
-    //   type: 'POST',
-    //   data: $(this).serialize()
-    // });
   });
-  // loadTweets();
 });
 
 const submitTweets = (content) => {
