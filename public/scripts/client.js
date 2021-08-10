@@ -16,7 +16,9 @@ const tweetData = {
     },
   "created_at": 1461116232227
 }
+console.log(timeago.format(tweetData.created_at));
 
+// $(document).ready(function() {
 const createTweetElement = (tweetData) => {
   const $tweet = $('<article>').addClass('tweetArticle');
   const html = `
@@ -31,7 +33,9 @@ const createTweetElement = (tweetData) => {
   </div>
   <div class="tweeted">${tweetData.content.text}</div>
   <footer>
-    <div class="date">10 days ago</div>
+    <div class="date">
+    ${timeago.format(tweetData.created_at)}
+    </div>
     <div class="engagement">
       <i class="iconFooter fas fa-flag"></i>
       <i class="iconFooter fas fa-retweet"></i>
@@ -39,11 +43,16 @@ const createTweetElement = (tweetData) => {
     </div>
   </footer>
   `
+  console.log(html)
+  console.log(timeago.format(tweetData.created_at))
   return $tweet.html(html);
 }
+// });
 
 const renderTweets = function(tweets) {
   // loops through tweets
+
+
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
 }
