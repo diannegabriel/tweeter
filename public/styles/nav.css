@@ -24,10 +24,12 @@ nav span {
 .columnNav {
   display: flex;
   flex-direction: column;
+  margin-top: 3px;
 }
 
 .icon {
   align-self: center;
+
 }
 
 .icon:hover {
