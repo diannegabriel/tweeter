@@ -57,7 +57,7 @@ const loadTweets = () => {
       method: 'GET',
       dataType: 'JSON'
     })
-    .then((tweets => ) {
+    .then(function (tweets) {
       renderTweets(tweets)
   });
 }
