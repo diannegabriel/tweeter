@@ -24,6 +24,7 @@ article {
 
 .tweeted {
   font-size: 18px;
+  font-weight: bold;
   display: flex;
   flex-grow: 1;
   border: 0px;
@@ -33,7 +34,6 @@ article {
 
 footer {
   font-size: 14px;
-  font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
