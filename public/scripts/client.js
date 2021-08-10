@@ -37,11 +37,12 @@ $(document).ready(function() {
 // const $tweeting = createTweetElement(tweetData);
 // console.log($tweeting);
 
-renderTweets(data);
+  renderTweets(data);
 
-$('.new-tweet form').submit(function(event) {
+  $('.new-tweet form').submit(function(event) {
+    event.preventDefault();
 
-});
+  });
 });
 
 // This function can be responsible for taking in an array of tweet objects
