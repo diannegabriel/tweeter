@@ -45,6 +45,7 @@ $(document).ready(function() {
 
     $.ajax({
       type: 'POST',
+      url: '/tweets/',
       data: $(this).serialize()
     });
   });
