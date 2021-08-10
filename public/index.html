@@ -31,7 +31,7 @@
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
+    <!-- Navigation bar set to fixed -->
     <nav>
       <div class="rowNav">
         <span>tweeter</span>
@@ -43,7 +43,8 @@
         </div>
       </div>
     </nav>
-
+    
+    <!-- Header of the page showcases the logged in user -->
     <header>
       <div class="columnHeader">
         <img src="/images/profile-hex.png"> 
@@ -53,6 +54,8 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
+      <!-- Section 'new-tweet' is where users type in their tweets -->
       <section class="new-tweet">
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
@@ -63,8 +66,12 @@
           </div>
         </form>
       </section>
-
+      
+      <!-- List of articles is where users see their tweet timeline -->
+      <!-- Article 'tweetArticle' is the box model for each tweet -->
       <article class="tweetArticle">
+
+        <!-- Division user is the box model of the user who's tweet is featured in the timeline -->
         <div class="user">
           <div class="userAvatar">
             <img src="https://i.imgur.com/73hZDYK.png" class="avatar">
@@ -84,12 +91,15 @@
           </div>
         </footer>
       </article>
+
       <article class="tweetArticle">
         hello!
       </article>
+
       <article class="tweetArticle">
         hey!
       </article>
+
     </main>
   </body>
 </html>
