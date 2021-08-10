@@ -39,7 +39,7 @@ const createTweetElement = (tweetData) => {
     </div>
   </footer>
   `
-  return 
+  return $tweet.html(html);
 }
 
 const renderTweets = function(tweets) {
