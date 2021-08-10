@@ -26,12 +26,12 @@ body {
  */
 
 main {
-  width: 90%;
+  width: 50%;
   background-color: #f4f1ec;
   margin: auto;
 }
 
-.container {
+main.container {
   padding-top: 100px;
 }
 
