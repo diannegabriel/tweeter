@@ -53,14 +53,11 @@ $(document).ready(function() {
 });
 
 const loadTweets = () => {
-  const $button = $('.button');
-  $button.on('click', function () {
-    console.log('Button clicked, performing ajax call...');
-    $.ajax('/tweet', { method: 'GET' })
-    .then(function (morePostsHtml) {
-      console.log('Success: ', morePostsHtml);
-      $button.replaceWith(morePostsHtml);
-    });
+    $.ajax('/tweet', { 
+      method: 'GET' 
+    })
+    .then(function (tweets) {
+      renderTweets(tweets)
   });
 }
 
