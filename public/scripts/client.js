@@ -20,12 +20,12 @@ const tweetData = {
 
 
 const createTweetElement = (tweetData) => {
-  console.log(tweetData.user)
   return tweetData.user
-  // console.log($tweet);
 }
 const $tweet = createTweetElement(tweetData);
 console.log($tweet); // to see what it looks like
+
+$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
 // $(document).ready(function() {
   // const $tweet = $(`<article class="tweet">Hello world</article>`);
