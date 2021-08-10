@@ -43,14 +43,18 @@ $(document).ready(function() {
     event.preventDefault();
     console.log($(this).serialize());
 
-    $.ajax({
+    $.ajax('/tweets', {
       type: 'POST',
-      url: '/tweets/',
+      // url: '/tweets/',
       data: $(this).serialize()
     });
     console.log($.ajax)
   });
 });
+
+const loadTweets = () => {
+  
+}
 
 // This function can be responsible for taking in an array of tweet objects
 // and then appending each one to the #tweets-container
