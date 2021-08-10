@@ -51,6 +51,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .error {
-  font-size: small;
   color: red;
+  font-size: small;
+  font-weight: 600;
 }
