@@ -1,16 +1,11 @@
+
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
-const createTweetElement = (data) => {
-  let $tweet;
-  return $tweet;
-};
-
-// Test / driver code (temporary). Eventually will get this from the server.
+// // Test / driver code (temporary). Eventually will get this from the server.
 const tweetData = {
   "user": {
     "name": "Newton",
@@ -22,9 +17,3 @@ const tweetData = {
     },
   "created_at": 1461116232227
 }
-
-const $tweet = createTweetElement(tweetData);
-
-// Test / driver code (temporary)
-console.log($tweet); // to see what it looks like
-$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
