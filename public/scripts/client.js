@@ -43,15 +43,28 @@ $(document).ready(function() {
     if ($('textarea').val().length > 140) {
       return alert(`It's limited to 140 characters, mate! Try again?`);
     }
-    $.ajax('/tweets', {
-      type: 'POST',
-      data: $(this).serialize()
-    });
+    
+    // User compose tweets
+    submitTweets($(this).serialize());
+
+
+    // $.ajax('/tweets', {
+    //   type: 'POST',
+    //   data: $(this).serialize()
+    // });
   });
-  loadTweets();
+  // loadTweets();
 });
 
-
+const submitTweets = (content) => {
+  $.ajax('/tweets', {
+    type: 'POST',
+    data: content
+  })
+  .then(function () {
+    loadTweets();
+  });
+};
 
 // This function can be responsible for taking in an array of tweet objects
 // and then appending each one to the #tweets-container
