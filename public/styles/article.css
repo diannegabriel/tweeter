@@ -31,3 +31,7 @@ article {
   border-bottom: 4px solid #545149;
   align-items: center;
 }
+
+footer {
+  font-size: 14px;
+}
