@@ -18,8 +18,13 @@ const tweetData = {
   "created_at": 1461116232227
 }
 
-// $(document).ready(function() {
-  const $tweet = $(`<article class="tweet">Hello world</article>`);
-  console.log($tweet);
 
+const createTweetElement = (tweetData) => {
+  console.log(tweetData)
+  // console.log($tweet);
+}
+const $tweet = createTweetElement(tweetData);
+
+// $(document).ready(function() {
+  // const $tweet = $(`<article class="tweet">Hello world</article>`);
 // });
