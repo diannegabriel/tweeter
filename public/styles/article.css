@@ -48,3 +48,7 @@ footer {
   margin-left: 10px;
   color: #4056A1;
 }
+
+.iconFooter:hover {
+  color: goldenrod;
+}
