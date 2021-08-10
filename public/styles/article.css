@@ -24,7 +24,6 @@ article {
 
 .tweeted {
   font-size: 18px;
-  background-color: cadetblue;
   display: flex;
   flex-grow: 1;
   border: 0px;
