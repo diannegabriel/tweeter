@@ -44,10 +44,10 @@ $(document).ready(function() {
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     if ($('textarea').val() === '') {
-      return alert(`There's nothing here! Try again?`);
+      return $('.error').text(`There's nothing here! Try again?`);
     }
     if ($('textarea').val().length > 140) {
-      return alert(`It's limited to 140 characters, mate! Try again?`);
+      return $('.error').text(`It's limited to 140 characters, mate! Try again?`);
     }
     
     // Refreshes the app when tweet is submitted
@@ -62,7 +62,7 @@ const submitTweets = (content) => {
   })
   .then(function () {
     loadTweets();
-  });
+  })
 };
 
 // This function can be responsible for taking in an array of tweet objects
