@@ -20,7 +20,24 @@ const tweetData = {
 const createTweetElement = (tweetData) => {
   const $tweet = $('<article>').addClass('tweetArticle');
   const html = `
-  
+  <div class="user">
+    <div class="userAvatar">
+      <img src="${tweetData.user.avatars}" class="avatar">
+      ${tweetData.user.name}
+    </div>
+    <div class="handle">
+    ${tweetData.user.handle}
+    </div>
+  </div>
+  <div class="tweeted">${tweetData.content.text}</div>
+  <footer>
+    <div class="date">10 days ago</div>
+    <div class="engagement">
+      <i class="iconFooter fas fa-flag"></i>
+      <i class="iconFooter fas fa-retweet"></i>
+      <i class="iconFooter fas fa-heart"></i>
+    </div>
+  </footer>
   `
   return 
 }
