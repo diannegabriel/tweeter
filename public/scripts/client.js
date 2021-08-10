@@ -38,6 +38,10 @@ $(document).ready(function() {
 // console.log($tweeting);
 
 renderTweets(data);
+
+$('.new-tweet form').submit(function(event) {
+
+});
 });
 
 // This function can be responsible for taking in an array of tweet objects
@@ -59,6 +63,7 @@ const renderTweets = function(tweets) {
 // console.log($('#tweets-container').append($tweet));
 // $(document).ready(function() {
   // const $tweet = $(`<article class="tweet">Hello world</article>`);
+  // console.log($tweet)
 // });
 
 const createTweetElement = (tweet) => {
@@ -85,7 +90,7 @@ const createTweetElement = (tweet) => {
     </div>
   </footer>
   `
-  console.log(html)
-  console.log(timeago.format(tweet.created_at))
+  // console.log(html)
+  // console.log(timeago.format(tweet.created_at))
   return $tweet.html(html);
 }
