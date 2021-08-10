@@ -4,6 +4,12 @@
 //  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 //  */
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 // Test / driver code (temporary). Eventually will get this from the server.
 const data = 
 [
@@ -44,7 +50,7 @@ $(document).ready(function() {
       return alert(`It's limited to 140 characters, mate! Try again?`);
     }
     
-    // User compose tweets
+    // Refreshes the app when tweet is submitted
     submitTweets($(this).serialize());
   });
 });
@@ -120,4 +126,4 @@ const loadTweets = () => {
 });
 }
 
-// loadTweets();
+loadTweets();
