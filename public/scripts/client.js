@@ -5,8 +5,8 @@
 //  */
 
 // Test / driver code (temporary). Eventually will get this from the server.
-// const data = 
-// [
+const data = 
+[
 //   {
 //     "user": {
 //       "name": "Newton",
@@ -29,7 +29,7 @@
 //     },
 //     "created_at": 1461113959088
 //   }
-// ]
+]
 
 // console.log(timeago.format(tweetData.created_at));
 
