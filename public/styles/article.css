@@ -1,7 +1,9 @@
 article {
   border: 4px solid #545149;
   height: 205px;
+  width: 50%;
   padding: 20px;
+  margin: auto;
 }
 
 article:hover {
