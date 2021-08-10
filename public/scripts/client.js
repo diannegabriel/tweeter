@@ -17,16 +17,20 @@ const tweetData = {
   "created_at": 1461116232227
 }
 
+const createTweetElement = (tweetData) => {
+  const $tweet = $('<article>').addClass('tweetArticle');
+  const html = `
+  
+  `
+  return 
+}
+
 const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
 }
 
-const createTweetElement = (tweetData) => {
-  
-  return tweetData 
-}
 // const $tweet = createTweetElement(tweetData);
 // console.log($tweet); // to see what it looks like
 
