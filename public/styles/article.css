@@ -24,6 +24,7 @@ article:hover {
 .handle {
   color: #cacccb;
   font-weight: 600;
+  align-self: center;
 }
 
 .tweeted {
@@ -51,4 +52,14 @@ footer {
 
 .iconFooter:hover {
   color: goldenrod;
+}
+
+.userAvatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 30%;
+  margin-right: 10px;
 }
