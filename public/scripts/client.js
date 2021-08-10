@@ -49,9 +49,11 @@ const createTweetElement = (tweetData) => {
 }
 // });
 
+// This function can be responsible for taking in an array of tweet objects
+// and then appending each one to the #tweets-container
 const renderTweets = function(tweets) {
   // loops through tweets
-
+  // for of?
 
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
