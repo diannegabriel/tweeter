@@ -93,13 +93,13 @@ const createTweetElement = (tweet) => {
   <div class="user">
     <div class="userAvatar">
       <img src="${tweet.user.avatars}" class="avatar">
-      ${tweet.user.name}
+      ${escape(tweet.user.name)}
     </div>
     <div class="handle">
-    ${tweet.user.handle}
+    ${escape(tweet.user.handle)}
     </div>
   </div>
-  <div class="tweeted">${tweet.content.text}</div>
+  <div class="tweeted">${escape(tweet.content.text)}</div>
   <footer>
     <div class="date">
     ${timeago.format(tweet.created_at)}
