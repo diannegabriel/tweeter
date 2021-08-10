@@ -42,6 +42,13 @@ $(document).ready(function() {
       data: $(this).serialize()
     });
   });
+  
+  if ($('.textarea').val() === '') {
+    alert(`There's nothing here! Try again?`);
+  }
+  if ($('.textarea').val().length > 140) {
+    alert(`It's limited to 140 characters, mate! Try again?`);
+  }
 });
 
 
