@@ -43,13 +43,12 @@ $(document).ready(function() {
     if ($('textarea').val().length > 140) {
       return alert(`It's limited to 140 characters, mate! Try again?`);
     }
-
     $.ajax('/tweets', {
       type: 'POST',
       data: $(this).serialize()
     });
   });
-  
+  loadTweets();
 });
 
 
@@ -115,4 +114,4 @@ const loadTweets = () => {
 });
 }
 
-loadTweets();
+// loadTweets();
