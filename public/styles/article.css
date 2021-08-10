@@ -1,6 +1,6 @@
 article {
   border: 4px solid #545149;
-  height: 200px;
+  height: 205px;
   padding: 20px;
 }
 
@@ -26,8 +26,8 @@ article {
   font-size: 18px;
   font-weight: bold;
   display: flex;
-  /* flex-basis: 60%; */
-  flex-grow: 2;
+  flex-basis: 65%;
+  /* flex-grow: 1; */
   border: 0px;
   border-bottom: 4px solid #545149;
   align-items: center;
@@ -36,6 +36,8 @@ article {
 footer {
   font-size: 14px;
   display: flex;
+  margin-top: 10px;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
