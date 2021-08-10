@@ -1,7 +1,7 @@
 nav {
   height: 120px;
   color: #FFFFFF;
-  font-size: 22px;
+  font-size: 20px;
   background-color: #4056A1;
   padding: 1.5em;
   position: fixed; 
@@ -11,7 +11,7 @@ nav {
 
 nav span {
   font-family: 'Bungee', cursive;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .rowNav {
@@ -24,7 +24,7 @@ nav span {
 .columnNav {
   display: flex;
   flex-direction: column;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 
 .icon {
