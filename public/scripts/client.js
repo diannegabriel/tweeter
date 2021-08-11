@@ -24,16 +24,15 @@ $(document).ready(function() {
       $error.html("<i class='fa fa-exclamation-triangle'></i> It's limited to 140 characters, mate! Try again?");
       return $error.slideDown();
     }
-
     // Refreshes the app when tweet is submitted
     submitTweets($(this).serialize());
-    // loadTweets().empty();
   });
 });
 
 // This function can be responsible for taking in an array of tweet objects
 // and then appending each one to the #tweets-container
 const renderTweets = function(tweets) {
+  $('#tweets-container').empty();
   // loops through tweets
   for (const tweet of tweets) {
     $('#tweets-container').prepend(createTweetElement(tweet));
