@@ -9,9 +9,14 @@
 } 
 
 .scroll-up:hover {
+  animation: move 1s;
   color: rgb(98, 11, 197);
   transition: 0.3s;
 } 
+
+@keyframes move{
+  100% { transform: translateY(-5px); }
+}
 
 /* For devices with smaller screen than 425px */
 @media only screen and (max-width: 425px) {
