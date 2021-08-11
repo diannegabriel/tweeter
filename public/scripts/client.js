@@ -1,9 +1,3 @@
-// /*
-//  * Client-side JS logic goes here
-//  * jQuery is already loaded
-//  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
-//  */
-
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -34,8 +28,8 @@ $(document).ready(function() {
   });
 });
 
-// This function can be responsible for taking in an array of tweet objects
-// and then appending each one to the #tweets-container
+// This function takes in an array of tweet objects
+// and then preppending each one to the #tweets-container
 const renderTweets = function(tweets) {
   $('#tweets-container').empty();
   // loops through tweets
@@ -47,10 +41,10 @@ const renderTweets = function(tweets) {
 }
 
 const createTweetElement = (tweet) => {
-  const $tweet = $('<article>').addClass('tweetArticle');
+  const $tweet = $('<article>').addClass('tweet-article');
   const html = `
   <header>
-    <div class="user">
+    <div class="user-information">
       <img src="${tweet.user.avatars}" class="avatar">
       ${escape(tweet.user.name)}
     </div>
@@ -58,7 +52,7 @@ const createTweetElement = (tweet) => {
     ${escape(tweet.user.handle)}
     </div>
   </header>
-  <div class="tweeted">
+  <div class="text">
   ${escape(tweet.content.text)}
   </div>
   <footer>
@@ -66,9 +60,9 @@ const createTweetElement = (tweet) => {
     ${timeago.format(tweet.created_at)}
     </div>
     <div class="engagement">
-      <i class="iconFooter fas fa-flag"></i>
-      <i class="iconFooter fas fa-retweet"></i>
-      <i class="iconFooter fas fa-heart"></i>
+      <i class="icon-footer fas fa-flag"></i>
+      <i class="icon-footer fas fa-retweet"></i>
+      <i class="icon-footer fas fa-heart"></i>
     </div>
   </footer>
   `
