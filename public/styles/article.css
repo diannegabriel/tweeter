@@ -1,9 +1,16 @@
+
+/* ============================== <article> ============================== */
+/* =================== <article class="tweet-article"> =================== */
+/* Style for the entire tweet-article box model */
 article {
   border: 4px solid #545149;
+  display: flex;
+  flex-direction: column;
   height: 205px;
-  width: 100%;
-  padding: 20px;
   margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
 }
 
 article:hover {
@@ -11,11 +18,8 @@ article:hover {
   transition: 0.3s;
 }
 
-.tweetArticle {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
+/* ============================== <article> ============================== */
+
 
 article > header {
   display: flex;
