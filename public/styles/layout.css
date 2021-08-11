@@ -10,9 +10,8 @@ html {
   box-sizing: inherit;
 }
 
-/* =============================== <header> ============================== */
 /* =========================== <body id="top"> =========================== */
-/* Default style for the entire Tweeter body */
+/* Style for the entire Tweeter body */
 body {
   background-color: #f4f1ec;
   color: #545149;
@@ -22,7 +21,7 @@ body {
 }
 
 /* ======================= <main class="container"> ====================== */
-/* Default style for main */
+/* Style for main container that encases all sections */
 main {
   background-color: #f4f1ec;
   margin: auto;

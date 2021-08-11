@@ -1,33 +1,46 @@
+/* =========================== <body id="top"> =========================== */
+/* =============================== <nav> ================================= */
+/* Style for the fixed navigation bar at the top of the page */
 nav {
-  height: 120px;
+  background-color: #4056A1;
   color: #FFFFFF;
   font-size: 20px;
-  background-color: #4056A1;
+  height: 120px;
   padding: 1.5em;
   position: fixed; 
   top: 0px;
   width: 100%;
 }
 
+/* Style for the Tweeter logo */
 nav span {
   font-family: 'Bungee', cursive;
   font-size: 30px;
 }
 
-.rowNav {
+/* Tweeter logo inherits the style from its parent */
+a.logo {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* ========================== <div class="row"> ========================== */
+.row {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
-.columnNav {
+/* ======================== <div class="column"> ========================= */
+.column {
   display: flex;
   flex-direction: column;
   margin-top: 8px;
 }
 
-.icon {
+/* Style for the double down arrow */
+.icon-navi {
   animation: move 1s infinite alternate;
   align-self: center;
   color: red;
@@ -35,12 +48,13 @@ nav span {
   margin: 5px;
 }
 
+/* Animation format for .icon-navi to make it bounce */
 @keyframes move{
   0%   { transform: translateY(0); }
   100% { transform: translateY(-5px); }
 }
 
-/* For devices with smaller screen than 1024px */
+/* Responsive display for devices with screen smaller than 1024px */
 @media only screen and (max-width: 1023px) {
   nav {
     background-color: #57008a;
@@ -53,7 +67,7 @@ nav span {
   }
 }
 
-/* For devices with smaller screen than 375px */
+/* Responsive display for devices with screen smaller than 375px */
 @media only screen and (max-width: 375px) {
   nav span {
     font-size: 24px;
