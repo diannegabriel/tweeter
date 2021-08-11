@@ -10,64 +10,28 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
-// Test / driver code (temporary). Eventually will get this from the server.
-const data = 
-[
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd" },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//   }
-]
-
-// console.log(timeago.format(tweetData.created_at));
-
 $(document).ready(function() {
   loadTweets();
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
-    const $error = "";
-    if ($('textarea').val() === '') {
-      $error = $('.error').text(`There's nothing here! Try again?`);
-      // $('.error').slideDown("slow");
+    const $error = $('#error');
+    $error.slideUp();
+    const tweet = $('#tweet-text').val();
+
+    if ($('#tweet-text').val() === '') {
+      $error.html("<i class='fa fa-exclamation-triangle'></i> Your tweet was empty! Please enter something to tweet!");
+      return $error.slideDown();
     }
-    if ($('textarea').val().length > 140) {
-      $error = $('.error').text(`It's limited to 140 characters, mate! Try again?`);
-      // $error.slideUp("slow");
+  
+    if (tweet.length > 140) {
+      $error.html("<i class='fa fa-exclamation-triangle'></i> It's limited to 140 characters, mate! Try again?");
+      return $error.slideDown();
     }
+
     // Refreshes the app when tweet is submitted
     submitTweets($(this).serialize());
   });
 });
-
-const submitTweets = (content) => {
-  $.ajax('/tweets', {
-    type: 'POST',
-    data: content
-  })
-  .then(function () {
-    loadTweets();
-    // $textArea.val('');
-    // $('.counter').text('140');
-  })
-};
 
 // This function can be responsible for taking in an array of tweet objects
 // and then appending each one to the #tweets-container
@@ -106,8 +70,6 @@ const createTweetElement = (tweet) => {
     </div>
   </footer>
   `
-  // console.log(html)
-  // console.log(timeago.format(tweet.created_at))
   return $tweet.html(html);
 }
 
@@ -120,3 +82,15 @@ const loadTweets = () => {
     renderTweets(tweets);
   })
 }
+
+const submitTweets = (content) => {
+  $.ajax('/tweets', {
+    type: 'POST',
+    data: content
+  })
+  .then(function () {
+    loadTweets();
+    $('#tweet-text').val('');
+    $(`.counter`).val(140);
+  })
+};
