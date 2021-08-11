@@ -1,33 +1,32 @@
+/* =========================== <body id="top"> =========================== */
+/* =================== <article class="tweet-article"> =================== */
+/* Style for the entire tweet-article box model */
 body > header {
-  height: 400px;
-  width: 100%;
+  align-items: center;
   background-color: #57008a;
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
-}
-
-.columnHeader {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 400px;
   padding: 1.5em;
+  width: 100%;
 }
 
 .name {
-  font-size: 35px;
   color: #FFFFFF;
+  font-size: 30px;
   padding: 0.5em;
 }
 
-/* For devices with screen 1024px or higher */
+/* Responsive display for devices with screen 1024px or higher */
 @media only screen and (min-width: 1024px) {
   body > header {
-    margin: 100px 20px 0px 40px;
-    width: 35%;
     float: left;
+    margin: 100px 20px 0px 40px;
+    width: 45%;
   }
 
-  .profile {
-    width: 45%;
-    float: left;
+  .name {
+    font-size: 35px;
   }
 }

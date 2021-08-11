@@ -81,7 +81,7 @@ footer {
 
 /* Responsive display for devices with screen smaller than 425px */
 @media only screen and (max-width: 425px) {
-  .user {
+  .user-information {
     font-size: 16px;
   }
 
