@@ -67,3 +67,8 @@ footer {
   width: 30%;
   margin-right: 10px;
 }
+
+/* For devices with smaller screen than 375px */
+@media only screen and (max-width: 375px) {
+  
+}
