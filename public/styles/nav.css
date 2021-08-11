@@ -31,12 +31,8 @@ nav span {
 .icon {
   animation: move 1s infinite alternate;
   align-self: center;
-  margin-top: 5px;
-}
-
-.icon:hover{
   color: red;
-  transition: 0.3s;
+  margin-top: 5px;
 }
 
 @keyframes move{
