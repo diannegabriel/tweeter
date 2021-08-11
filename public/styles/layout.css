@@ -12,7 +12,7 @@ html {
 
 /* =============================== <header> ============================== */
 /* =========================== <body id="top"> =========================== */
-/* Default style for the entire Tweeter body*/
+/* Default style for the entire Tweeter body */
 body {
   background-color: #f4f1ec;
   color: #545149;
@@ -22,11 +22,12 @@ body {
 }
 
 /* ======================= <main class="container"> ====================== */
+/* Default style for main */
 main {
-  width: 80%;
   background-color: #f4f1ec;
   margin: auto;
   padding-top: 100px;
+  width: 80%;
 }
 
 /* ===================== <section id="end-timeline"> ===================== */
@@ -39,14 +40,14 @@ main {
   text-align: center;
 }
 
-/* For devices with smaller screen than 425px */
+/* Responsive display for devices with screen smaller than 425px */
 @media only screen and (max-width: 425px) {
   main {
     padding-top: 50px;
   }
 }
 
-/* For devices with screen 1024px or higher */
+/* Responsive display for devices with screen 1024px or higher */
 @media only screen and (min-width: 1024px) {
   main {
     width: 45%;
