@@ -17,3 +17,9 @@ header {
   color: #FFFFFF;
   padding: 0.5em;
 }
+
+@media only screen and (min-width: 1024px) {
+  header {
+
+  }
+}
