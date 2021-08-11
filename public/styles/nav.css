@@ -39,19 +39,20 @@ nav span {
   100% { transform: translateY(-5px); }
 }
 
-/* Screens: phone and tablet screens smaller than 1024px */
+/* For devices with smaller screen than 1024px */
 @media only screen and (max-width: 1023px) {
   nav {
     background-color: #57008a;
     background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   }
-
+  
   nav span {
     font-family: 'Bungee', cursive;
     font-size: 26px;
   }
 }
 
+/* For devices with smaller screen than 375px */
 @media only screen and (max-width: 375px) {
   nav span {
     font-family: 'Bungee', cursive;
@@ -61,7 +62,7 @@ nav span {
   .columnNav {
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 16px;
   }
 }
