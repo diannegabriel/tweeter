@@ -37,6 +37,18 @@
   padding: 5px;
 }
 
+.button:hover {
+  background-color: #57008a;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.button:active {
+  color: #4056A1;
+  margin-left: 1px 1px 0;
+  outline: 1px solid #545149;
+  background-color: transparent;
+}
+
 .counter {
   font-family: 'Bungee', cursive;
   font-size: 18px;
