@@ -1,6 +1,14 @@
 .scroll-up {
-  color: #57008a;
+  color: rgba(128, 42, 226, 0.4);
   padding: 0.5em;
   position: fixed;
   bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+
+} 
+
+.scroll-up:hover {
+  color: #57008a;
+  transition: 0.3s;
 } 
