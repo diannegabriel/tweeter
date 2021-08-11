@@ -14,6 +14,9 @@ $(document).ready(function() {
   loadTweets();
 
   $('section.new-tweet').hide();
+  $('div.columnNav').on('click', () => {
+    $('.new-tweet').slideToggle();
+  });
 
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
