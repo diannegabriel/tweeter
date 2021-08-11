@@ -1,13 +1,29 @@
+/* ===================== <section class="new-tweet"> ===================== */
+/* Style for the overall submission tweet form */
 .new-tweet {
   background-color: #f4f1ec;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
+/* ========================== <div id="error"> =========================== */
+/* Placeholder for when the slideDown triggers and style for the errors */
+#error {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+  display: none;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ====================== <label for="tweet-text"> ======================= */
 #tweet-text {
   background-color: #f4f1ec;
   font-size: 18px;
@@ -60,17 +76,6 @@ label {
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-}
-
-#error {
-  background-color: rgba(255, 0, 0, 0.1);
-  color: red;
-  display: none;
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  padding: 10px;
-  text-align: center;
 }
 
 #posted {
