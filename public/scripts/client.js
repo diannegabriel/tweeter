@@ -93,16 +93,18 @@ const renderTweets = function(tweets) {
 const createTweetElement = (tweet) => {
   const $tweet = $('<article>').addClass('tweetArticle');
   const html = `
-  <div class="user">
-    <div class="userAvatar">
+  <header>
+    <div class="user">
       <img src="${tweet.user.avatars}" class="avatar">
       ${escape(tweet.user.name)}
     </div>
     <div class="handle">
     ${escape(tweet.user.handle)}
     </div>
+  </header>
+  <div class="tweeted">
+  ${escape(tweet.content.text)}
   </div>
-  <div class="tweeted">${escape(tweet.content.text)}</div>
   <footer>
     <div class="date">
     ${timeago.format(tweet.created_at)}

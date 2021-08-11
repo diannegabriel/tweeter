@@ -40,11 +40,6 @@ main.container {
 
 /* For devices with screen 1024px or higher */
 @media only screen and (min-width: 1024px) {
-  .profile {
-    width: 45%;
-    float: left;
-  }
-
   main {
     width: 45%;
     display: flex;
