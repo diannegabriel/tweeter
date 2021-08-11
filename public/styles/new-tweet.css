@@ -55,3 +55,22 @@ input:focus, textarea:focus, select:focus {
   font-size: small;
   font-weight: 600;
 }
+
+/* For devices with smaller screen than 375px */
+@media only screen and (max-width: 375px) {
+  #tweet-text {
+   font-size: 16px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .counter {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}
