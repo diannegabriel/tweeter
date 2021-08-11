@@ -16,6 +16,7 @@ $(document).ready(function() {
   $('section.new-tweet').hide();
   $('div.columnNav').on('click', () => {
     $('.new-tweet').slideToggle();
+    $('.new-tweet textarea').focus();
   });
 
   $('.new-tweet form').submit(function(event) {
