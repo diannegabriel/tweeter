@@ -30,9 +30,7 @@ $(document).ready(function() {
       $error.html("<i class='fa fa-exclamation-triangle'></i> It's limited to 140 characters, mate! Try again?");
       return $error.slideDown();
     }
-    
     submitTweets($(this).serialize());
-
   });
 });
 
