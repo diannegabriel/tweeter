@@ -39,6 +39,7 @@ nav span {
 
 @media only screen and (max-width: 1023px) {
   nav {
-    
+    background-color: #57008a;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   }
 }
