@@ -10,18 +10,18 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
+/* =============================== <header> ============================== */
+/* =========================== <body id="top"> =========================== */
+/* Default style for the entire Tweeter body*/
 body {
-  color: #545149;
   background-color: #f4f1ec;
+  color: #545149;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
   padding-top: 120px;
 }
 
+/* ======================= <main class="container"> ====================== */
 main {
   width: 80%;
   background-color: #f4f1ec;
@@ -29,6 +29,7 @@ main {
   padding-top: 100px;
 }
 
+/* ===================== <section id="end-timeline"> ===================== */
 .end-timeline {
   background-color: rgba(119, 119, 119, 0.205);
   font-size: 16px;

@@ -12,6 +12,7 @@ body > header {
   width: 100%;
 }
 
+/* ========================= <span class="name"> ========================= */
 .name {
   color: #FFFFFF;
   font-size: 30px;
