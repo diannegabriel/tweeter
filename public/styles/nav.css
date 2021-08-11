@@ -55,13 +55,10 @@ nav span {
 /* For devices with smaller screen than 375px */
 @media only screen and (max-width: 375px) {
   nav span {
-    font-family: 'Bungee', cursive;
     font-size: 24px;
   }
 
   .columnNav {
-    display: flex;
-    flex-direction: column;
     margin-top: 15px;
     font-size: 16px;
   }

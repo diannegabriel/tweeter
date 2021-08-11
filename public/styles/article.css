@@ -69,19 +69,13 @@ footer {
 }
 
 /* For devices with smaller screen than 375px */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .user {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-size: 16px;
   }
 
   .handle {
-    color: #cacccb;
     font-size: 16px;
-    font-weight: 600;
-    align-self: center;
   }
 
   .avatar {
@@ -91,11 +85,5 @@ footer {
 
   .tweeted {
     font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    flex-basis: 65%;
-    border: 0px;
-    border-bottom: 4px solid #545149;
-    align-items: center;
   }
 }

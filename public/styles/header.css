@@ -18,11 +18,11 @@ header {
   padding: 0.5em;
 }
 
+/* For devices with screen 1024px or higher */
 @media only screen and (min-width: 1024px) {
   header {
     margin: 100px 20px 0px 40px;
     width: 35%;
     float: left;
-    /* position: fixed; */
   }
 }
