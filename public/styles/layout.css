@@ -29,7 +29,7 @@ body {
  */
 
 main {
-  width: 90%;
+  width: 80%;
   background-color: #f4f1ec;
   margin: auto;
 }
@@ -40,5 +40,17 @@ main.container {
 
 @media only screen and (min-width: 1024px) {
 /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+  .profile {
+    width: 45%;
+    float: left;
+  }
+
+  main {
+    width: 45%;
+    /* float: right; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 };
