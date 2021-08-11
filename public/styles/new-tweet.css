@@ -66,8 +66,8 @@ input:focus, textarea:focus, select:focus {
   background-color: rgba(255, 0, 0, 0.1);
   color: red;
   display: none;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
   margin-bottom: 20px;
   padding: 10px;
   text-align: center;
@@ -77,8 +77,8 @@ input:focus, textarea:focus, select:focus {
   background-color: rgba(4, 175, 255, 0.205);
   color: #2206a0;
   display: none;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
   margin-top: 10px;
   padding: 10px;
   text-align: center;
@@ -100,5 +100,9 @@ input:focus, textarea:focus, select:focus {
 
   .button {
     font-size: 16px;
+  }
+
+  #error {
+    font-size: 14px;
   }
 }

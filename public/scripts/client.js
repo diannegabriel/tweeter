@@ -22,7 +22,6 @@ $(document).ready(function() {
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     const $error = $('#error');
-    $error.slideUp();
     if ($('#tweet-text').val() === '') {
       $error.html("<i class='fa fa-exclamation-triangle'></i> Your tweet was empty! Please enter something to tweet!");
       return $error.slideDown();
@@ -31,7 +30,7 @@ $(document).ready(function() {
       $error.html("<i class='fa fa-exclamation-triangle'></i> It's limited to 140 characters, mate! Try again?");
       return $error.slideDown();
     }
-
+    
     submitTweets($(this).serialize());
 
   });
@@ -88,6 +87,12 @@ const loadTweets = () => {
   })
 }
 
+const postedTimeout = (id) => {
+  setTimeout(function(){ 
+    $(id).slideUp();
+  }, 5000);
+}
+
 const submitTweets = (content) => {
   $.ajax('/tweets', {
     type: 'POST',
@@ -99,5 +104,6 @@ const submitTweets = (content) => {
     $(`.counter`).val(140);
     $('#posted').slideDown();
     $('#posted').html('<i class="fas fa-check-circle"></i> Tweet posted!')
+    postedTimeout('#posted');
   })
 };
