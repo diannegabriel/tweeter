@@ -62,12 +62,6 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-/* .error {
-  color: red;
-  font-size: small;
-  font-weight: 600;
-} */
-
 #error {
   margin-bottom: 20px;
   display: none;

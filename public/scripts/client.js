@@ -16,20 +16,18 @@ $(document).ready(function() {
     event.preventDefault();
     const $error = $('#error');
     $error.slideUp();
-    const tweet = $('#tweet-text').val();
-
     if ($('#tweet-text').val() === '') {
       $error.html("<i class='fa fa-exclamation-triangle'></i> Your tweet was empty! Please enter something to tweet!");
       return $error.slideDown();
     }
-  
-    if (tweet.length > 140) {
+    if ($('#tweet-text').val().length > 140) {
       $error.html("<i class='fa fa-exclamation-triangle'></i> It's limited to 140 characters, mate! Try again?");
       return $error.slideDown();
     }
 
     // Refreshes the app when tweet is submitted
     submitTweets($(this).serialize());
+    // loadTweets().empty();
   });
 });
 

@@ -4,7 +4,7 @@ $(document).ready(function() {
     const remain = 140 - $(this).val().length;
     const $error = $('#error');
     $(`.counter`).text(remain);
-    if (remain > 0 && remain < 140) {
+    if (remain >= 0 && remain < 140) {
       $error.slideUp();
     } 
     if (remain < 0) {
