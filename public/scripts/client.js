@@ -40,7 +40,7 @@ const data =
 // console.log(timeago.format(tweetData.created_at));
 
 $(document).ready(function() {
-  renderTweets(data);
+  loadTweets();
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     const $error = "";
@@ -64,6 +64,8 @@ const submitTweets = (content) => {
   })
   .then(function () {
     loadTweets();
+    // $textArea.val('');
+    // $('.counter').text('140');
   })
 };
 
@@ -71,7 +73,6 @@ const submitTweets = (content) => {
 // and then appending each one to the #tweets-container
 const renderTweets = function(tweets) {
   // loops through tweets
-
   for (const tweet of tweets) {
     $('#tweets-container').prepend(createTweetElement(tweet));
   }
@@ -124,8 +125,6 @@ const loadTweets = () => {
     dataType: 'JSON'
   })
   .then(function (tweets) {
-    renderTweets(tweets)
-});
+    renderTweets(tweets);
+  })
 }
-
-loadTweets();

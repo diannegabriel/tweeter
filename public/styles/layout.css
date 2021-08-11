@@ -22,6 +22,8 @@ body {
   padding-top: 120px;
 }
 
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -37,5 +39,6 @@ main.container {
 }
 
 @media only screen and (min-width: 1024px) {
+/* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
 
 };
