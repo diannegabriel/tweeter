@@ -45,4 +45,23 @@ nav span {
     background-color: #57008a;
     background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   }
+
+  nav span {
+    font-family: 'Bungee', cursive;
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  nav span {
+    font-family: 'Bungee', cursive;
+    font-size: 24px;
+  }
+
+  .columnNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 16px;
+  }
 }
