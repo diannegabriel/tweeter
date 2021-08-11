@@ -80,16 +80,6 @@ const renderTweets = function(tweets) {
   // takes return value and appends it to the tweets container
 }
 
-// const $tweet = createTweetElement(tweetData);
-// console.log($tweet); // to see what it looks like
-
-// $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
-// console.log($('#tweets-container').append($tweet));
-// $(document).ready(function() {
-  // const $tweet = $(`<article class="tweet">Hello world</article>`);
-  // console.log($tweet)
-// });
-
 const createTweetElement = (tweet) => {
   const $tweet = $('<article>').addClass('tweetArticle');
   const html = `
