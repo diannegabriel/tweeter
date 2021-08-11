@@ -12,6 +12,9 @@ const escape = function (str) {
 
 $(document).ready(function() {
   loadTweets();
+
+  $('section.new-tweet').hide();
+
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     const $error = $('#error');
