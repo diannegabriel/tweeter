@@ -25,14 +25,14 @@ nav span {
   display: flex;
   flex-direction: column;
   margin-top: 8px;
-  cursor: pointer;
 }
 
 .icon {
   animation: move 1s infinite alternate;
   align-self: center;
   color: red;
-  margin-top: 5px;
+  cursor: pointer;
+  margin: 5px;
 }
 
 @keyframes move{

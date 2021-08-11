@@ -14,7 +14,7 @@ $(document).ready(function() {
   loadTweets();
 
   $('section.new-tweet').hide();
-  $('div.columnNav').on('click', () => {
+  $('i.fa-angle-double-down').on('click', () => {
     $('.new-tweet').slideToggle();
     $('.new-tweet textarea').focus();
   });
@@ -31,8 +31,9 @@ $(document).ready(function() {
       $error.html("<i class='fa fa-exclamation-triangle'></i> It's limited to 140 characters, mate! Try again?");
       return $error.slideDown();
     }
-    // Refreshes the app when tweet is submitted
+    
     submitTweets($(this).serialize());
+
   });
 });
 
@@ -96,5 +97,7 @@ const submitTweets = (content) => {
     loadTweets();
     $('#tweet-text').val('');
     $(`.counter`).val(140);
+    $('#posted').slideDown();
+    $('#posted').text('Your tweet sent!')
   })
 };

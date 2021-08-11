@@ -72,6 +72,16 @@ input:focus, textarea:focus, select:focus {
   background-color: rgba(255, 0, 0, 0.1);
 }
 
+#posted {
+  margin-bottom: 20px;
+  display: none;
+  color: red;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
 /* For devices with smaller screen than 375px */
 @media only screen and (max-width: 375px) {
   #tweet-text {
