@@ -1,6 +1,6 @@
 /* =========================== <body id="top"> =========================== */
-/* =================== <article class="tweet-article"> =================== */
-/* Style for the entire tweet-article box model */
+/* =============================== <header> ============================== */
+/* Style for the logged in user */
 body > header {
   align-items: center;
   background-color: #57008a;
