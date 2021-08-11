@@ -30,12 +30,7 @@ nav span {
 .icon {
   align-self: center;
   margin-top: 5px;
-}
-
-.icon:hover {
-  align-self: center;
   color: red;
-  transition: 0.3s;
 }
 
 @media only screen and (max-width: 1023px) {
