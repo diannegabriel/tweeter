@@ -1,5 +1,7 @@
+/* !! THIS <section> IS NOT IN THE index.html BUT INSIDE client.js INSTEAD !! */
+/* Refer to createTweetElement function on line 43 in /styles/client.js */
 
-/* ============================== <article> ============================== */
+/* =================== <section id="tweets-container"> =================== */
 /* =================== <article class="tweet-article"> =================== */
 /* Style for the entire tweet-article box model */
 article {
@@ -18,9 +20,8 @@ article:hover {
   transition: 0.3s;
 }
 
-/* ============================== <article> ============================== */
-
-
+/* =============================== <header> ============================== */
+/* Encases the Tweeter user information and their tweet*/
 article > header {
   display: flex;
   flex-direction: row;
@@ -28,27 +29,38 @@ article > header {
   font-size: 19px;
 }
 
-.user {
-  display: flex;
+/* ==================== <div class="user-information"> =================== */
+/* Displays the user's avatar, username, and handle in a spaced-out row */
+.user-information {
   align-items: center;
+  display: flex;
+}
+
+.avatar {
+  margin-right: 10px;
+  width: 30%;
 }
 
 .handle {
+  align-self: center;
   color: #cacccb;
   font-weight: 600;
-  align-self: center;
 }
 
-.tweeted {
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  flex-basis: 65%;
+/* ========================= <div class="text"> ========================== */
+/* Displays the user's tweet */
+.text {
+  align-items: center;
   border: 0px;
   border-bottom: 4px solid #545149;
-  align-items: center;
+  display: flex;
+  flex-basis: 65%;
+  font-size: 18px;
+  font-weight: bold;
 }
 
+/* =============================== <footer> ============================== */
+/* Shows the time when that tweet was created along with engagements */
 footer {
   font-size: 14px;
   display: flex;
@@ -57,22 +69,17 @@ footer {
   justify-content: space-between;
 }
 
-.iconFooter {
+.icon-footer {
   margin-left: 10px;
   color: #4056A1;
 }
 
-.iconFooter:hover {
+.icon-footer:hover {
   color: goldenrod;
   transition: 0.3s;
 }
 
-.avatar {
-  width: 30%;
-  margin-right: 10px;
-}
-
-/* For devices with smaller screen than 425px */
+/* Responsive display for devices with screen smaller than 425px */
 @media only screen and (max-width: 425px) {
   .user {
     font-size: 16px;
@@ -87,7 +94,7 @@ footer {
     margin-right: 5px;
   }
 
-  .tweeted {
+  .text {
     font-size: 16px;
   }
 }
