@@ -6,6 +6,7 @@
   right: 20px;
   cursor: pointer;
   font-size: 4em;
+  display: none;
 } 
 
 .scroll-up:hover {
