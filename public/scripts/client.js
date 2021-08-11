@@ -98,6 +98,6 @@ const submitTweets = (content) => {
     $('#tweet-text').val('');
     $(`.counter`).val(140);
     $('#posted').slideDown();
-    $('#posted').text('Tweet posted!')
+    $('#posted').html('<i class="fas fa-check-circle"></i> Tweet posted!')
   })
 };
