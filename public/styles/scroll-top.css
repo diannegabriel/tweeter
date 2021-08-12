@@ -1,12 +1,15 @@
+/* ============================== <footer> =============================== */
+/* ======================== <i class="scroll-up"> ======================== */
+/* Style for the arrow up to scroll to the top  */
 .scroll-up {
   color: rgba(128, 42, 226, 0.4);
-  padding: 0.5em;
-  position: fixed;
   bottom: 30px;
-  right: 20px;
   cursor: pointer;
-  font-size: 4em;
   display: none;
+  font-size: 4em;
+  /* padding: 0.5em; */
+  position: fixed;
+  right: 30px;
 } 
 
 .scroll-up:hover {
@@ -15,15 +18,16 @@
   transition: 0.3s;
 } 
 
+/* Animation format for .icon-navi to make it move */
 @keyframes move{
   100% { transform: translateY(-5px); }
 }
 
-/* For devices with smaller screen than 425px */
+/* Responsive display for devices with screen smaller than 425px */
 @media only screen and (max-width: 425px) {
   .scroll-up {
-    bottom: 10px;
-    font-size: 3em;
-    right: 10px;
+    bottom: 20px;
+    font-size: 3.5em;
+    right: 20px;
   }
 } 
