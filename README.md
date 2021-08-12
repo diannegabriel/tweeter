@@ -21,10 +21,14 @@ Tweeter is a simple, single-page Twitter clone. Tweeter is a better alternative 
 
 ## How To Use
 
-Have something witty to say? Or have some weird shower thoughts to share? No worries! Simply click the down arrow on the top right side of the page. Once the form shows up, start your what's on your mind!
+Have something witty to say? Or have some weird shower thoughts to share? No worries! Simply click the down arrow on the top right side of the page. Once the form shows up, start typing what's on your mind!
 
 If you have nothing to share and are simply feeling curious about what other people are up to, scroll down through your timeline to see what everybody else is tweeting. Simple as that!
 
 ## Features
+
+### Toggle Form
+Afraid of accidentally typing something and accidentally submitting it? No worries! Tweeter has a sliding feature that shows or hides the text form. No more oopsies!
+!["Toggle form"](https://github.com/diannegabriel/tweeter/blob/master/docs/toggle_compose.gif)
 
 <!-- !["Screenshot of URLs page"](https://github.com/diannegabriel/tinyapp/blob/master/docs/urls_page.png) -->
