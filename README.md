@@ -31,4 +31,13 @@ If you have nothing to share and are simply feeling curious about what other peo
 Afraid of accidentally typing something and accidentally submitting it? No worries! Tweeter has a sliding feature that shows or hides the text form. No more oopsies!
 !["Toggle form"](https://github.com/diannegabriel/tweeter/blob/master/docs/toggle_compose.gif)
 
+### Success Event
+Tweeter confirms your tweet has been posted by notifying you. The notification automatically goes away and you are more than welcome to tweet more or browse your timeline.
+!["Success Event"](https://github.com/diannegabriel/tweeter/blob/master/docs/success.gif)
+
+### Errors
+Oh no! Did you receive an error instead of a success notification? Either you may have tried to send an empty tweet or you have exceeded the character limit.
+!["Error - Empty Form"](https://github.com/diannegabriel/tweeter/blob/master/docs/error_empty.gif)
+!["Error - Exceeds Character Limit"](https://github.com/diannegabriel/tweeter/blob/master/docs/error_characters.gif)
+
 <!-- !["Screenshot of URLs page"](https://github.com/diannegabriel/tinyapp/blob/master/docs/urls_page.png) -->
