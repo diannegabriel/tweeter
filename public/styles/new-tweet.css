@@ -1,4 +1,5 @@
 /* ===================== <section class="new-tweet"> ===================== */
+
 /* Style for the overall submission tweet form */
 .new-tweet {
   background-color: #f4f1ec;
@@ -11,6 +12,7 @@
 }
 
 /* ========================== <div id="error"> =========================== */
+
 /* Placeholder for when the slideDown triggers and style for the errors */
 #error {
   background-color: rgba(255, 0, 0, 0.1);
@@ -24,6 +26,7 @@
 }
 
 /* ===================== <textarea id="tweet-text"> ====================== */
+
 /* Style for the text form where users compose their tweets */
 #tweet-text {
   align-self: center;
@@ -44,11 +47,13 @@ textarea:focus {
 }
 
 /* ===================== <label for="tweet-text"> ======================== */
+
 label {
   font-size: 22px;
 }
 
 /* ===================== <div class="submit-area"> ======================= */
+
 /* Style for submit-area that encases submit button and counter */
 .submit-area {
   align-items: center;
@@ -58,6 +63,7 @@ label {
 }
 
 /* ====================== <button class="button"> ======================== */
+
 /* Format and style for the Tweet button */
 .button {
   background-color: #4056A1;
@@ -81,6 +87,7 @@ label {
 }
 
 /* ====================== <output class="counter"> ======================= */
+
 /* Style and formatting for counter - 140 */
 .counter {
   font-family: 'Bungee', cursive;
@@ -88,6 +95,7 @@ label {
 }
 
 /* ========================= <div id="posted"> =========================== */
+
 /* Style for when the tweet successfully posted */
 #posted {
   background-color: rgba(4, 175, 255, 0.205);
@@ -100,9 +108,11 @@ label {
   text-align: center;
 }
 
-/* Responsive display for devices with screen smaller than 375px */
+/* ======================== RESPONSIVE DISPLAY =========================== */
+
+/* For devices with screen smaller than 375px */
 @media only screen and (max-width: 375px) {
-  #tweet-text {
+  #tweet-text, .button {
    font-size: 16px;
   }
 
@@ -110,15 +120,7 @@ label {
     font-size: 18px;
   }
 
-  .counter {
-    font-size: 14px;
-  }
-
-  .button {
-    font-size: 16px;
-  }
-
-  #error {
+  .counter, #error {
     font-size: 14px;
   }
 }

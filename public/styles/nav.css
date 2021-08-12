@@ -1,4 +1,5 @@
 /* =============================== <nav> ================================= */
+
 /* Style for the fixed navigation bar at the top of the page */
 nav {
   background-color: #4056A1;
@@ -24,6 +25,7 @@ a.logo {
 }
 
 /* ========================== <div class="row"> ========================== */
+
 .row {
   align-items: center;
   display: flex;
@@ -32,6 +34,7 @@ a.logo {
 }
 
 /* ======================== <div class="column"> ========================= */
+
 .column {
   display: flex;
   flex-flow: column wrap;
@@ -53,7 +56,9 @@ a.logo {
   100% { transform: translateY(-5px); }
 }
 
-/* Responsive display for devices with screen smaller than 1024px */
+/* ======================== RESPONSIVE DISPLAY =========================== */
+
+/* For devices with screen smaller than 1024px */
 @media only screen and (max-width: 1023px) {
   nav {
     background-color: #57008a;
@@ -66,7 +71,7 @@ a.logo {
   }
 }
 
-/* Responsive display for devices with screen smaller than 375px */
+/* For devices with screen smaller than 375px */
 @media only screen and (max-width: 375px) {
   nav span {
     font-size: 24px;

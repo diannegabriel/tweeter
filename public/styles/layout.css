@@ -3,6 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
 html {
   box-sizing: border-box;
 }
@@ -11,6 +12,7 @@ html {
 }
 
 /* =========================== <body id="top"> =========================== */
+
 /* Style for the entire Tweeter body */
 body {
   background-color: #f4f1ec;
@@ -21,6 +23,7 @@ body {
 }
 
 /* ======================= <main class="container"> ====================== */
+
 /* Style for main container that encases all sections */
 main {
   background-color: #f4f1ec;
@@ -29,14 +32,16 @@ main {
   width: 80%;
 }
 
-/* Responsive display for devices with screen smaller than 425px */
+/* ======================== RESPONSIVE DISPLAY =========================== */
+
+/* For devices with screen smaller than 425px */
 @media only screen and (max-width: 425px) {
   main {
     padding-top: 50px;
   }
 }
 
-/* Responsive display for devices with screen 1024px or higher */
+/* For devices with screen 1024px or higher */
 @media only screen and (min-width: 1024px) {
   main {
     display: flex;

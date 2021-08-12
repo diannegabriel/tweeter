@@ -3,6 +3,7 @@
 
 /* =================== <section id="tweets-container"> =================== */
 /* =================== <article class="tweet-article"> =================== */
+
 /* Style for the entire tweet-article box model */
 article {
   border: 4px solid #545149;
@@ -21,6 +22,7 @@ article:hover {
 }
 
 /* =============================== <header> ============================== */
+
 /* Format of the Tweeter user information box model */
 article > header {
   display: flex;
@@ -30,6 +32,7 @@ article > header {
 }
 
 /* ==================== <div class="user-information"> =================== */
+
 /* Style and format of the avatar, username, and handle in a spaced-out row */
 .user-information {
   align-items: center;
@@ -48,6 +51,7 @@ article > header {
 }
 
 /* ========================= <div class="text"> ========================== */
+
 /* Style and format of the user's tweet */
 .text {
   align-items: center;
@@ -60,6 +64,7 @@ article > header {
 }
 
 /* =============================== <footer> ============================== */
+
 /* Style and format of the footer (date and engagement) box model */
 footer {
   display: flex;
@@ -79,22 +84,16 @@ footer {
   transition: 0.3s;
 }
 
-/* Responsive display for devices with screen smaller than 425px */
-@media only screen and (max-width: 425px) {
-  .user-information {
-    font-size: 16px;
-  }
+/* ======================== RESPONSIVE DISPLAY =========================== */
 
-  .handle {
+/* For devices with screen smaller than 425px */
+@media only screen and (max-width: 425px) {
+  .user-information, .handle, .text {
     font-size: 16px;
   }
 
   .avatar {
     margin-right: 5px;
     width: 25%;
-  }
-
-  .text {
-    font-size: 16px;
   }
 }
