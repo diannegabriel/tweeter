@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone. Tweeter is a better alternative as there is no weirdness going on, no toxicity, and it's all about having fun!
+Tweeter is a simple, single-page Twitter clone. Tweeter is a better alternative as there is no weirdness going on, no toxicity, and it's all about having fun! This app was made using JavaScript, CSS, and HTML.
 
 !["Tweeter"](https://github.com/diannegabriel/tweeter/blob/master/docs/overall.gif)
 
@@ -21,7 +21,7 @@ Tweeter is a simple, single-page Twitter clone. Tweeter is a better alternative 
 
 ## How To Use
 
-Have something witty to say? Or have some weird shower thoughts to share? No worries! Simply click the down arrow on the top right side of the page. Once the form shows up, start typing what's on your mind!
+Have something witty to say? Or have some weird shower thoughts to share? No worries! Simply click the down arrow on the top right side of the page. Once the form shows up, start typing what's on your mind, and submit when you are done!
 
 If you have nothing to share and are simply feeling curious about what other people are up to, scroll down through your timeline to see what everybody else is tweeting. Simple as that!
 
@@ -40,4 +40,10 @@ Oh no! Did you receive an error instead of a success notification? Either you ma
 !["Error - Empty Form"](https://github.com/diannegabriel/tweeter/blob/master/docs/error_empty.gif)
 !["Error - Exceeds Character Limit"](https://github.com/diannegabriel/tweeter/blob/master/docs/error_characters.gif)
 
-<!-- !["Screenshot of URLs page"](https://github.com/diannegabriel/tinyapp/blob/master/docs/urls_page.png) -->
+### End Timeline
+I get it... Tweeter can be super addicting. Sadly, your timeline hits the end and you have to start reading new tweets instead. Tweeter lets you know when you've hit the wall and if you click the up arrow button beside it, it takes you all the way to the top!
+!["End Timeline"](https://github.com/diannegabriel/tweeter/blob/master/docs/end_timeline.gif)
+
+### Responsive Display
+No matter how big or small your browser, no matter how squished your browser is, trust me, Tweeter will always work!
+!["Responsive Display"](https://github.com/diannegabriel/tweeter/blob/master/docs/responsive_design.gif)
