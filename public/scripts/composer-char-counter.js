@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(`.counter`).text(remain);
     if (remain >= 0 && remain < 140) {
       $error.slideUp();
-    } 
+    }
     if (remain < 0) {
       $(`.counter`).css('color', 'red');
     }

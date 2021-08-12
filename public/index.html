@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App CSS -->
@@ -30,24 +30,26 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/composer-new-tweet.js"></script>
     <script type="text/javascript" src="/scripts/composer-scroll-top.js"></script>
     
-    <!-- Responsive -->
+    <!-- Responsive Display -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body id="top">
-    <!-- Navigation bar set to fixed -->
+
+    <!-- Navigation bar set to fixed; encases the Tweeter logo and compose tweet button -->
     <nav>
       <div class="row">
         <span>
-          <a href="/" class="logo">tweeter</a>
+          <a href="/" class="logo">Tweeter</a>
         </span>
         <div class="column">
-            <div>
-              <b>Write</b> a new tweet
-            </div>
-            <i class="icon-navi fas fa-angle-double-down"></i>
+          <div>
+            <b>Write</b> a new tweet
+          </div>
+          <i class="icon-navi fas fa-angle-double-down"></i>
         </div>
       </div>
     </nav>
@@ -61,29 +63,41 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
 
-      <!-- Section 'new-tweet' is where users compose their tweets -->
+      <!-- Section 'new-tweet' encases the errors, textarea form, and a success event -->
       <section class="new-tweet">
+
+        <!-- Returns an error if textarea is empty or over 140 characters -->
         <div id="error"></div>
+        
+        <!-- Form where the user can submit their tweets -->
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" placeholder=""></textarea>
+          <textarea name="text" id="tweet-text"></textarea>
           <div class="submit-area">
             <button class="button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+
+        <!-- Returns a success event when tweet is submitted -->
         <div id="posted">Tweet posted!</div>
       </section>
       
       <!-- Section "tweets-container" contains all the articles for each tweet (tweet-article)-->
-      <section id="tweets-container"></section>
-      <!-- Article 'tweetArticle' is the box model for each tweet -->
+      <section id="tweets-container">
 
+        <!-- Article 'tweetArticle' goes here -->
+        <!-- Article 'tweetArticle' can be located in client.js -> createTweetElement function -->
+        
+      </section>
+      
+      <!-- Section "end-timeline" lets users know they have scrolled all the way to the bottom -->
       <section id="end-timeline">
         <p class="end-timeline"><i>That's the end of your timeline. No more tweets to load!</i></p>
       </section>
     </main>
-
+    
+    <!-- Footer of the page has a fixed button that will scroll to the top when clicked -->
     <footer>
       <a href="#top"><i class="scroll-up fas fa-chevron-circle-up"></i></a>
     </footer>
