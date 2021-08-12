@@ -51,20 +51,20 @@ label {
 /* ===================== <div class="submit-area"> ======================= */
 /* Style for submit-area that encases submit button and counter */
 .submit-area {
-  margin-top: 5px;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 5px;
 }
 
 /* ====================== <button class="button"> ======================== */
 /* Format and style for the Tweet button */
 .button {
-  color: #FFF;
   background-color: #4056A1;
+  border: 0px;
+  color: #FFF;
   font-family: 'Bungee', cursive;
   font-size: 18px;
-  border: 0px;
   padding: 5px;
 }
 

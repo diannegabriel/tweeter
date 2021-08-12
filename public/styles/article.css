@@ -21,16 +21,16 @@ article:hover {
 }
 
 /* =============================== <header> ============================== */
-/* Encases the Tweeter user information and their tweet*/
+/* Format of the Tweeter user information box model */
 article > header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   font-size: 19px;
+  justify-content: space-between;
 }
 
 /* ==================== <div class="user-information"> =================== */
-/* Displays the user's avatar, username, and handle in a spaced-out row */
+/* Style and format of the avatar, username, and handle in a spaced-out row */
 .user-information {
   align-items: center;
   display: flex;
@@ -48,7 +48,7 @@ article > header {
 }
 
 /* ========================= <div class="text"> ========================== */
-/* Displays the user's tweet */
+/* Style and format of the user's tweet */
 .text {
   align-items: center;
   border: 0px;
@@ -60,18 +60,18 @@ article > header {
 }
 
 /* =============================== <footer> ============================== */
-/* Shows the time when that tweet was created along with engagements */
+/* Style and format of the footer (date and engagement) box model */
 footer {
-  font-size: 14px;
   display: flex;
-  margin-top: 10px;
   flex-direction: row;
+  font-size: 14px;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .icon-footer {
-  margin-left: 10px;
   color: #4056A1;
+  margin-left: 10px;
 }
 
 .icon-footer:hover {
@@ -90,8 +90,8 @@ footer {
   }
 
   .avatar {
-    width: 25%;
     margin-right: 5px;
+    width: 25%;
   }
 
   .text {
