@@ -1,4 +1,7 @@
+// =============================== escape ================================
+
 // Implements safe html and escapes unsafe characters
+// This way, users who submit html or js codes won't destroy the program
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -9,11 +12,9 @@ const escape = function(str) {
 
 // Takes in an array of tweet objects then prepends each one to #tweets-container
 const renderTweets = function(tweets) {
-  
-  // When renderTweets is called, section #tweets-container clears out
   $('#tweets-container').empty();
   
-  // Loops through tweets and the newest tweet created will appear first (prepend)
+  // Loops through tweets and the newest tweet created will appear first
   for (const tweet of tweets) {
     $('#tweets-container').prepend(createTweetElement(tweet));
   }
@@ -26,8 +27,6 @@ const createTweetElement = (tweet) => {
 
   // Creates <article id='tweet-article'>
   const $tweet = $('<article>').addClass('tweet-article');
-
-  // Box model for each tweet
   const archiveHTML = `
   <header>
     <div class="user-information">
@@ -53,10 +52,13 @@ const createTweetElement = (tweet) => {
   </footer>
   `;
 
-  // <article id='tweet-article'> will contain the entirety of html
+  // <article id='tweet-article'> will contain the entirety of archiveHTML
   return $tweet.html(archiveHTML);
 };
 
+// ======================= ajax GET / renderTweets =======================
+
+// Takes a GET request from /tweets and renders the tweets
 const loadTweets = () => {
   $.ajax('/tweets', {
     method: 'GET',
@@ -67,12 +69,13 @@ const loadTweets = () => {
     });
 };
 
-const postedTimeout = (id) => {
-  setTimeout(function() {
-    $(id).slideUp();
-  }, 5000);
-};
+// ====================== ajax POST / submitTweets =======================
 
+/*
+* Takes a POST request on /tweets when the user submits a new tweet.
+* When successful, all tweets will load, textarea clears,
+* counter resets to 140, and a post confirmation appears.
+*/
 const submitTweets = (content) => {
   $.ajax('/tweets', {
     type: 'POST',
@@ -88,18 +91,27 @@ const submitTweets = (content) => {
     });
 };
 
-// Runs when DOM is ready and has read everything
+// =========================== postedTimeout =============================
+
+// Sets a timeout to 5s so the notification slides up when it appears
+const postedTimeout = (notification) => {
+  setTimeout(function() {
+    $(notification).slideUp();
+  }, 5000);
+};
+
+// ============================ DOM IS READY =============================
+
 $(document).ready(function() {
 
-  // Loads all the tweets to the page
+  // Loads all the tweets on the page
   loadTweets();
 
-  // $('section.new-tweet').hide();
-  // $('i.fa-angle-double-down').on('click', () => {
-  //   $('.new-tweet').slideToggle();
-  //   $('.new-tweet textarea').focus();
-  // });
-
+  /*
+  * Event where the user submits a new tweet.
+  * Page won't refresh upon submission and
+  * returns a successful event or an error
+  */
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
     const $error = $('#error');
