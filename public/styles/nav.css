@@ -34,14 +34,14 @@ a.logo {
 /* ======================== <div class="column"> ========================= */
 .column {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   margin-top: 8px;
 }
 
 /* Style for the double down arrow */
 .icon-navi {
-  animation: move 1s infinite alternate;
   align-self: center;
+  animation: move 1s infinite alternate;
   color: red;
   cursor: pointer;
   margin: 5px;

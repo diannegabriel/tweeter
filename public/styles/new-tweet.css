@@ -23,27 +23,42 @@
   text-align: center;
 }
 
-/* ====================== <label for="tweet-text"> ======================= */
+/* ===================== <textarea id="tweet-text"> ====================== */
+/* Style for the text form where users compose their tweets */
 #tweet-text {
+  align-self: center;
   background-color: #f4f1ec;
-  font-size: 18px;
-  font-weight: 600;
-  resize: none;
-  color: #545149;
-  width: 100%;
   border: 0px;
   border-bottom: 4px solid #545149;
-  align-self: center;
+  color: #545149;
+  font-size: 18px;
+  font-weight: 600;
   margin-top: 5px;
+  resize: none;
+  width: 100%;
 }
 
-.submitArea {
+/* Disables the blue outline when the user is focused on the textarea */
+textarea:focus {
+  outline: none;
+}
+
+/* ===================== <label for="tweet-text"> ======================== */
+label {
+  font-size: 22px;
+}
+
+/* ===================== <div class="submit-area"> ======================= */
+/* Style for submit-area that encases submit button and counter */
+.submit-area {
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* ====================== <button class="button"> ======================== */
+/* Format and style for the Tweet button */
 .button {
   color: #FFF;
   background-color: #4056A1;
@@ -59,23 +74,17 @@
 }
 
 .button:active {
+  background-color: transparent;
   color: #4056A1;
   margin-left: 1px 1px 0;
   outline: 1px solid #545149;
-  background-color: transparent;
 }
 
+/* ====================== <output class="counter"> ======================= */
+/* Style and formatting for counter - 140 */
 .counter {
   font-family: 'Bungee', cursive;
   font-size: 18px;
-}
-
-label {
-  font-size: 22px;
-}
-
-input:focus, textarea:focus, select:focus {
-  outline: none;
 }
 
 #posted {
@@ -89,7 +98,7 @@ input:focus, textarea:focus, select:focus {
   text-align: center;
 }
 
-/* For devices with smaller screen than 375px */
+/* Responsive display for devices with smaller screen than 375px */
 @media only screen and (max-width: 375px) {
   #tweet-text {
    font-size: 16px;
