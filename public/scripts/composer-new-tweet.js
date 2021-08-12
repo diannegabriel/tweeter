@@ -1,3 +1,5 @@
+// This code implements the compose tweet button
+
 // ============================ DOM IS READY =============================
 
 $(document).ready(function() {

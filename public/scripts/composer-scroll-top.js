@@ -1,5 +1,8 @@
 // This code implements the scroll to top functionality
 
+// ============================ DOM IS READY =============================
+
+
 $(document).ready(() => {
 
   // Detects a scroll event

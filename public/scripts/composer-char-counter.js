@@ -1,3 +1,5 @@
+// This code implements the .counter countdown and its styling
+
 // ============================ DOM IS READY =============================
 
 $(document).ready(function() {
