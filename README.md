@@ -46,4 +46,4 @@ I get it... Tweeter can be super addicting. Sadly, your timeline hits the end an
 
 ### Responsive Display
 No matter how big or small your browser, no matter how squished your browser is, trust me, Tweeter will always work!
-!["Responsive Display"](https://github.com/diannegabriel/tweeter/blob/master/docs/responsive_design.gif)
+!["Responsive Display"](https://github.com/diannegabriel/tweeter/blob/master/docs/responsive.gif)
