@@ -2,6 +2,8 @@
 
 Tweeter is a simple, single-page Twitter clone. Tweeter is a better alternative as there is no weirdness going on, no toxicity, and it's all about having fun! This app was made using JavaScript, CSS, and HTML.
 
+Live demo (might load slowly): [Tweeter](https://tweeter-rlgc.onrender.com/)
+
 !["Tweeter"](https://github.com/diannegabriel/tweeter/blob/master/docs/overall.gif)
 
 ## Getting Started
